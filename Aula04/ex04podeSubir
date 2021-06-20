@@ -1,0 +1,26 @@
+function podeSubir(altura, acompanhada) {
+    if(altura >= 1.4 && altura <= 2) {
+        console.log("Altura: " + altura + " Acompanhada: " + acompanhada + " => Acesso autorizado")
+        return true;
+    } else if(altura >= 1.2 && altura < 1.4 && acompanhada == true) {
+        console.log("Altura: " + altura + " Acompanhada: " + acompanhada + " => Acesso autorizado")
+        return true;
+    } else if(altura >= 1.2 && altura < 1.4 && acompanhada == false) {
+            console.log("Altura: " + altura + " Acompanhada: " + acompanhada + " => Acesso autorizado somente com acompanhante")
+            return true;
+    } else {
+        console.log("Altura: " + altura + " Acompanhada: " + acompanhada+ " => Acesso negado")
+        return false;
+    };
+
+};
+
+podeSubir(1.5, true);
+podeSubir(1.5, false);
+podeSubir(1.3, true);
+podeSubir(1.3, false);
+podeSubir(1.1, true);
+podeSubir(1.1, false);
+podeSubir(1.7, false);
+podeSubir(1.25, false);
+podeSubir(1.2, true);
