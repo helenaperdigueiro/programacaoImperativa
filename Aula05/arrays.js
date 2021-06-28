@@ -43,19 +43,26 @@ const euroScores = [8, 10, 6, 8, 10, 6, 7, 9];
 const comparacaoDeArrays = [];
 
 let comparar = (scoreFromAsiaScores, scoreFromEuroScores) => {
+    let resultadoDaComparacao = false
     if (asiaScores.length == euroScores.length) { //verifica se os arrays tem tamanhos iguais antes de serem comparadas.
         for (i=0; i<=asiaScores.length-1; i++) {
             console.log("comparing: " + asiaScores[i] + " " + euroScores[i]);
             if (asiaScores[i] == euroScores[i]) {
                 comparacaoDeArrays.push(true);
-                console.log("true");
+                resultadoDaComparacao = true;
+                console.log(resultadoDaComparacao);
             } else {
                 comparacaoDeArrays.push(false);
-                console.log("false");
+                resultadoDaComparacao = false;
+                console.log(resultadoDaComparacao);
             };
         };
+        return resultadoDaComparacao
+    } else {
+        return "nao eh possivel comprar 2 arrays de tamanhos diferentes"
     };
 };
+
 
 console.log(comparar(asiaScores, euroScores));
 console.log(comparacaoDeArrays);

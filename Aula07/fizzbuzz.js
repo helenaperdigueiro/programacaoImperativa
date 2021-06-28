@@ -13,5 +13,5 @@ let fizzBuzz = (a, b, c, d, e) => {
         console.log(textToPrint);
     }
 }
-fizzBuzz(5, 8, "Multiplo de ambos", "Multiplo do primeiro parametro", "Multiplo do segundo parametro");
 fizzBuzz(5, 8, "FizzBuzz", "Fizz", "Buzz");
+fizzBuzz(5, 8, "Multiplo de ambos", "Multiplo do primeiro parametro", "Multiplo do segundo parametro");
