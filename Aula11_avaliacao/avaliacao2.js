@@ -1,3 +1,24 @@
+const menuDoMicroondas = [
+    {
+        prato: 'Pipoca',
+        tempo: 10
+    }
+]
+
+let usarMicroondas = (prato, tempo) => {
+    switch(tempo) {
+        
+    }
+}
+
+
+
+
+
+
+
+
+
 let microondas = (prato, tempo) => {
     switch(prato) {
         case 'Pipoca':
@@ -70,8 +91,6 @@ let microondas = (prato, tempo) => {
                 console.log('Prato pronto, bom apetite!')
             }
             break;
-        default:
-            console.log('Prato inexistente')
     }
 }
 
@@ -129,6 +148,3 @@ microondas('Brigadeiro', 17) // esperado: Comida queimou
 microondas('Brigadeiro', 23) // esperado: Comida queimou
 microondas('Brigadeiro', 24) // esperado: Kabumm
 microondas('Brigadeiro', 25) // esperado: Kabumm
-
-console.log(' - Testes do Prato inexistente:')
-microondas('Pudim', 5) // esperado: Prato inexistente
