@@ -16,7 +16,14 @@ let produtos = [
         valor: 1000,
         qualidade: 9,
         status: true
+    },
+    {
+        nome: 'Bola',
+        valor: 800,
+        qualidade: 8,
+        status: true,
     }
+
 ]
 
 let carrinho = produtos.filter(
@@ -33,7 +40,9 @@ carrinho.forEach(
 console.log(`*****`)
 
 let valorTotal = carrinho.reduce(
-    (acumulador, elemento) => acumulador.valor + elemento.valor
+    (acumulador, elemento) => {
+        return {valor: acumulador.valor + elemento.valor}
+    }
 )
 
-console.log(`Valor total: ${valorTotal}`)
+console.log(`Valor total: ${valorTotal.valor}`)

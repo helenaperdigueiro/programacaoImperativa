@@ -9,3 +9,4 @@ function Restaurante(nomeDoRestaurante, cardapio) {
 let restaurante1 = new Restaurante("Outback", [" Alice Spring Chicken", " Kookaburra Wings", " Ribs on the Barbie"]);
 
 console.log(restaurante1.entrada());
+console.log(restaurante1)
