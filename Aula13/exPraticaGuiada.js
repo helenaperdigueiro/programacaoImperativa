@@ -41,8 +41,7 @@ console.log(`*****`)
 
 let valorTotal = carrinho.reduce(
     (acumulador, elemento) => {
-        return {valor: acumulador.valor + elemento.valor}
-    }
+        return {valor: acumulador.valor + elemento.valor}}
 )
 
 console.log(`Valor total: ${valorTotal.valor}`)
